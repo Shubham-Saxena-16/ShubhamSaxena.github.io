@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shubham Saxena Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Magnific Popup CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+
+
+
+
+
+
+
+    <style>
+
+        /*======================================
+        //--//-->   ABOUT
+        ======================================*/
+
+        .about-mf .box-shadow-full {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        .about-mf .about-img {
+            margin-bottom: 2rem;
+        }
+
+            .about-mf .about-img img {
+                margin-left: 10px;
+            }
+
+
+        .skill-mf .progress {
+            /* background-color: #cde1f8; */
+            margin: .5rem 0 1.2rem 0;
+            border-radius: 0;
+            height: .7rem;
+        }
+
+            .skill-mf .progress .progress-bar {
+                height: .7rem;
+                background-color: #ffbd39;
+            }
+
+
+        /* Animation styles */
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+            #typing-animation:before {
+                content: "";
+                /* position: absolute; */
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: #ccc;
+                animation: typing-cursor 0.5s ease-in-out infinite;
+            }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+
+            to {
+                width: 0;
+            }
+        }
+
+
+        /* project image zoom effect */
+
+        .zoom-effect {
+            overflow: hidden;
+            transition: transform 0.3s ease-out;
+        }
+
+            .zoom-effect:hover {
+                transform: scale(1.1);
+            }
+        /* Button watch video 3D Button Effect */
+        .btn-3d {
+            position: relative;
+            display: inline-block;
+            padding: 15px 30px;
+            color: white;
+            background: linear-gradient(145deg, #1f1f1f, #3f3f3f);
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #0b0b0b, -5px -5px 10px #4f4f4f;
+            transition: all 0.3s ease;
+        }
+
+            .btn-3d:hover {
+                box-shadow: inset 5px 5px 10px #0b0b0b, inset -5px -5px 10px #4f4f4f;
+                transform: translateY(-2px);
+            }
+        /* style for circle */
+        .design .circle {
+            aspect-ratio: 1;
+            position: absolute;
+            border-radius: 50%;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle:nth-child(1) {
+            background: linear-gradient(90deg, transparent 50%, #262525);
+            width: 38rem;
+        }
+
+        .circle:nth-child(2) {
+            width: 30rem;
+            height: 30rem;
+            background-image: url("images/bg_1.png"); /* Use forward slashes */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            /* To keep the asymmetrical shape, keeping border-radius as is */
+            border-radius: 51% 49% 48% 52% / 49% 49% 51% 59%;
+            animation: borderAnimation 5s linear infinite;
+            border: 1rem solid white;
+            box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877FF, inset 0 0 2rem #3877FF, 0 0 4rem #3877FF, inset 0 0 4rem #3877FF;
+        }
+
+        @keyframes borderAnimation {
+            0% {
+                border-radius: 51% 49% 48% 52% / 49% 49% 51% 59%;
+            }
+
+            20% {
+                border-radius: 45% 55% 50% 50% / 50% 55% 45% 50%;
+            }
+
+            40% {
+                border-radius: 40% 60% 45% 55% / 55% 50% 45% 50%;
+            }
+
+            60% {
+                border-radius: 35% 65% 50% 50% / 45% 55% 55% 45%;
+            }
+
+            80% {
+                border-radius: 45% 55% 55% 45% / 50% 45% 55% 50%;
+            }
+
+            100% {
+                border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+            }
+        }
+
+        /*style for circle ends */
+
+        /* Style 2 */
+
+        .about-img-wrapper {
+            position: relative;
+            width: 411px; /* Same width as the image */
+            height: 411px; /* Same height as the image */
+        }
+
+            .about-img-wrapper .circle-animated {
+                width: 40%; /* Circle matches the parent (wrapper) size */
+                height: 40%; /* Circle matches the parent (wrapper) size */
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 51% 49% 48% 52% / 49% 49% 51% 59%;
+                animation: borderAnimation 5s linear infinite;
+                border: 1rem solid white; /* White border around the circle */
+                box-shadow: 0 0 1rem #fff, inset 0 0 1rem #fff, 0 0 2rem #3877FF, inset 0 0 2rem #3877FF, 0 0 4rem #3877FF, inset 0 0 4rem #3877FF;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1; /* Above the image */
+            }
+
+        @keyframes borderAnimation {
+            0% {
+                border-radius: 51% 49% 48% 52% / 49% 49% 51% 59%;
+            }
+
+            50% {
+                border-radius: 40% 60% 50% 50% / 50% 50% 60% 40%;
+            }
+
+            100% {
+                border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+            }
+        }
+
+
+        /* Style 2 Ends */
+
+
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the project section */
+       
+
+            #project-section * {
+                text-align: left !important; /* Enforce left alignment */
+            }
+    
+
+      
+        /* Modal Styling */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            overflow: auto;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            margin: 5% auto;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .modal-header .close {
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+        .modal-section {
+            margin-top: 20px;
+        }
+
+            .modal-section h2, .modal-section h3 {
+                color: #fff;
+            }
+
+            .modal-section p, .modal-section ul {
+                color: #ddd;
+            }
+
+        iframe {
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+
+    </style>
+
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Shubham Saxena </a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="home-section" class="hero">
+        <div class="home-slider  owl-carousel">
+            <div class="slider-item ">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="right-container"></div>
+
+
+
+                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                        <!-- added design -->
+                        <div class="design">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                        <!--  design ended -->
+                        <!--<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+                        <div class="overlay"></div>
+                    </div>-->
+                        <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                            <div class="text">
+                                <div class="subheading" style="text-align: left;">
+                                    <span style="display: block;">
+                                        👋 Hi There!
+                                    </span>
+                                    <span style="display: block; margin-top: 5px;">
+                                        <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&Left=true&vLeft=true&width=800&height=70&duration=4000&lines=Welcome+to+my+Profile!;" />
+                                    </span>
+                                </div>
+
+                                <h1 class="mb-4 mt-3">I'm <span>Shubham Saxena </span></h1>
+
+                                <!-- Element to contain animated typing -->
+                                <span id="typing-animation"></span>
+
+                                <script>
+
+                                    // Initialize the typing animation
+                                    const typingAnimationElement = document.getElementById('typing-animation');
+
+                                    // Create an array of typing text
+                                    const typingTexts = [
+                                        'Detail-Oriented Analyst  ',
+                                        'Storyteller              ',
+                                        'Trainer/Mentor           ',
+                                    ];
+
+                                    // Create a function to display the typing animation for a given text
+                                    function playTypingAnimation(text) {
+                                        // Loop through each character and add it to the element
+                                        for (let i = 0; i < text.length; i++) {
+                                            setTimeout(() => {
+                                                typingAnimationElement.textContent += text[i];
+                                            }, i * 200); // Increase the delay to slow down the typing animation
+                                        }
+
+                                        // Once the animation is complete, reset the text and start over
+                                        setTimeout(() => {
+                                            typingAnimationElement.textContent = '';
+                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                        }, text.length * 200);
+                                    }
+
+                                    // Start the typing animation loop
+                                    playTypingAnimation(typingTexts[0]);
+
+                                </script>
+
+                                <br>
+                                <h2> Microsoft Power BI Developer </h2>
+                                <p>
+                                    <a href="javascript:void(0);" onclick="openVideoPopup();" class="btn btn-primary py-3 px-4">YouTube</a>
+                                    <a href="https://github.com/Shubham-Saxena-16" class="btn btn-white btn-outline-white py-3 px-4" target="_blank">My works</a>
+                                    <br />
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<script>
+        function openVideoPopup() {
+            var videoUrl = 'https://www.youtube.com/embed/0hd5I18rpuw?autoplay=1&rel=0&showinfo=0';
+            var videoWindow = window.open(videoUrl, 'Video', 'width=800,height=450');
+
+            var closeCheckInterval = setInterval(function () {
+                if (videoWindow.closed) {
+                    clearInterval(closeCheckInterval);
+                }
+            }, 1000);
+        }
+
+        function downloadCV() {
+            window.location.href = 'path/to/your/CV.pdf'; // Replace with actual CV file path
+        }
+    </script>-->
+
+        <script>
+            function openVideoPopup() {
+                var videoUrl = 'https://www.youtube.com/embed/0hd5I18rpuw?autoplay=1&rel=0&showinfo=0';
+
+                // Instead of opening a new window, use a modal for better user experience and faster loading
+                var videoModal = document.createElement('div');
+                videoModal.style.position = 'fixed';
+                videoModal.style.top = '0';
+                videoModal.style.left = '0';
+                videoModal.style.width = '100%';
+                videoModal.style.height = '100%';
+                videoModal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+                videoModal.style.zIndex = '9999';
+                videoModal.style.display = 'flex';
+                videoModal.style.justifyContent = 'center';
+                videoModal.style.alignItems = 'center';
+
+                // Create iframe for video
+                var iframe = document.createElement('iframe');
+                iframe.src = videoUrl;
+                iframe.width = '800';
+                iframe.height = '450';
+                iframe.style.border = 'none';
+                iframe.allow = 'autoplay; encrypted-media';
+                iframe.allowFullscreen = true;
+
+                // Add iframe to modal
+                videoModal.appendChild(iframe);
+
+                // Close modal on click outside the iframe
+                videoModal.addEventListener('click', function (event) {
+                    if (event.target === videoModal) {
+                        document.body.removeChild(videoModal);
+                    }
+                });
+
+                // Append modal to the body
+                document.body.appendChild(videoModal);
+            }
+
+            function downloadCV() {
+                window.location.href = 'path/to/your/CV.pdf'; // Replace with actual CV file path
+            }
+        </script>
+
+    </section>
+
+    <!--animated line -->
+    <!--    <div>
+            <a href="https://www.animatedimages.org/cat-lines-562.htm">
+                <img src="https://www.animatedimages.org/data/media/562/animated-line-image-0124.gif"
+                     border="0" alt="animated-line-image-0124"
+                     style="width: 100%; height: auto;">
+            </a>
+        </div>
+        <br>-->
+    <!--======================================
+        ABOUT ME ( 2nd Page )
+    =======================================-->
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+
+        <!-- Reduced padding -->
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Profile Image with Animation (30% width) -->
+                <div class="col-md-4 text-center">
+                    <!-- Adjusted to 4 columns for 30% width -->
+                    <div class="about-img-wrapper">
+                        <br />
+                        <br />
+                        <br />
+                        <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="Shubham Saxena" style="width: 800px; height: 200px;"> <!-- Set to 300x300 -->
+                    </div>
+
+                    <!-- Button Section -->
+                    <div class="buttons text-center mt-2" style="margin-top: 10px;">
+                        <!-- Reduced margin to bring buttons closer to image -->
+                        <button type="button" class="btn-3d" onclick="window.open('https://www.linkedin.com/in/shubham1605/', '_blank');">LinkedIn</button>
+                        <button type="button" class="btn-3d" onclick="downloadCV();">Download CV</button>
+                        <br>
+                        <button type="button" class="btn-3d" onclick="openVideoPopup();">Play Video</button>
+                    </div>
+                </div>
+
+                <!-- About Me Section Text (70% width) -->
+                <div class="col-md-8 pl-lg-4 pb-3">
+                    <!-- Reduced padding for compact layout -->
+                    <div class="heading-section mb-2">
+                        <!-- Reduced bottom margin -->
+                        <h1 class="big">About</h1>
+                        <h2 class="mb-3">About Me</h2> <!-- Reduced margin -->
+                    </div>
+                    <p>
+                        <strong class="highlight">Hey there!</strong><br>
+                        I’m Shubham, your friendly neighborhood data explorer with a knack for turning numbers into stories that fuel smart decisions.
+                    </p>
+                    <p>
+                        <strong class="highlight">What drives me?</strong><br>
+                        I’m on a quest for opportunities that match my skills, challenge me, and let me add meaningful impact through data.
+                    </p>
+                    <p>
+                        <strong class="highlight">Why choose me?</strong><br>
+                        I’m passionate about transforming raw data into actionable insights using Excel, SQL, and Power BI. While my path has been unconventional, I’ve jumped into projects that truly showcase my skills.
+                    </p>
+                    <p>
+                        <strong class="highlight">My Secret Sauce?</strong><br>
+                        Team fit? Check. Adaptability? Absolutely. Problem-solving? You bet. I bring a positive vibe and serious analytical chops to every team I join.
+                    </p>
+                    <p>So, what are you waiting for? Check out the <em>Resume</em> section, download my CV, and let’s connect!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--======================================
+           KEY Skill section in  ABOUT ME
+    =======================================-->
+    <!--test -->
+    <div class="skills-container">
+        <v class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Key Skills</h1>
+                <h2 class="mb-4">Key Skills</h2>
+                <div class="skill-boxes">
+                    <div class="skill">Stakeholder Management</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Effective Presentation</div>
+                </div>
+            </div>
+
+            <style>
+                .skills-container {
+                    text-align: center;
+                    margin: 20px;
+                }
+
+                .skills-heading {
+                    font-size: 1.8em;
+                    margin-bottom: 15px;
+                    color: #333;
+                }
+
+                .skill-boxes {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
+                }
+
+                .skill {
+                    width: 130px;
+                    height: 130px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1em;
+                    font-weight: bold;
+                    color: #333;
+                    background-color: #fff;
+                    border: 2px solid #333;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+                    transition: box-shadow 0.3s ease-in-out;
+                }
+
+                    .skill:hover {
+                        box-shadow: 0 0 20px rgba(255, 215, 0, 0.9);
+                    }
+            </style>
+
+
+            <!--test end-->
+            <!--======================================
+            ABOUT ME ENDS
+    =======================================-->
+            <!-- test starts-->
+            <!--======================================
+     RESUME SECTION WITHOUT PROFILE PICTURE
+    =======================================-->
+
+
+            <section class="ftco-section ftco-no-pb" id="resume-section">
+                <div class="container">
+                    <div class="row justify-content-center pb-5">
+                        <div class="col-md-10 heading-section text-center ftco-animate">
+                            <h1 class="big big-2">Resume</h1>
+                            <h2 class="mb-4">Resume</h2>
+                            <p>Seasoned Data Analyst with 5+ years of experience driving business strategies through data-driven insights. Proven expertise in statistical analysis, and project management.</p>
+                        </div>
+                    </div>
+
+                    <!-- Button section for external links -->
+                    <div class="buttons text-center">
+                        <!-- LinkedIn Button -->
+                        <!--<button type="button" class="btn-3d" onclick="window.open('https://www.linkedin.com/in/shubham1605/', '_blank');">
+                    LinkedIn
+                </button>-->
+                        <!-- Download CV Button -->
+                        <button type="button" class="btn-3d" onclick="downloadCV();">
+                            Download CV
+                        </button>
+
+                        <!-- Button to Open the Video Popup -->
+                        <button type="button" class="btn-3d" onclick="openVideoPopup();">
+                            Play Video
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <div class="grid-container">
+
+                <!-- Experience Section 1 -->
+                <div class="grid-item">
+                    <div class="resume-wrap ftco-animate experience-card">
+                        <span class="date">2021-Aug 24</span>
+                        <h2>Power BI Developer</h2>
+                        <span class="position">Capgemini</span>
+                        <p class="mt-4">
+                            Capgemini, a global leader in consulting, technology services, and digital transformation, helping businesses innovate and grow.
+                        </p>
+                        <ul class="experience-list">
+                            <li>Captured client requirements, managed ETL processes, and optimized resource allocation using a Resource Tracker for improved data modeling.</li>
+                            <li>Consolidated data with SQL and Power BI, automated reporting, and mentored the team in SQL and data integration to enhance operational efficiency.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Section 2 -->
+                <div class="grid-item">
+                    <div class="resume-wrap ftco-animate experience-card">
+                        <span class="date">2018-2021</span>
+                        <h2>Data Analyst</h2>
+                        <span class="position">Sagezza</span>
+                        <p class="mt-4">
+                            Sagezza is a data-driven digital marketing analytics and solutions company, helping top 100 global brands.
+                        </p>
+                        <ul class="experience-list">
+                            <li>Executed EOD operations using Finacle, leveraging SQL and ETL processes to optimize data flow and enhance reporting for banking transactions.</li>
+                            <li>Developed Power BI dashboards and integrated JIRA for real-time incident tracking, delivering actionable insights to improve data-driven decision-making.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <style>
+                    /* Override global grid styling for experience list */
+                    .experience-card {
+                        text-align: left; /* Ensures content aligns to the left */
+                        padding: 15px; /* Adds space within each card */
+                    }
+
+                    .experience-list {
+                        list-style-type: disc; /* Standard bullet points */
+                        padding-left: 20px; /* Adds left indentation for bullets */
+                        margin-top: 10px; /* Adds space above list */
+                    }
+
+                        .experience-list li {
+                            margin-bottom: 8px; /* Spacing between list items */
+                        }
+                </style>
+
+
+
+
+                <!-- Education Section 1 -->
+                <div class="grid-item">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2012-2014</span>
+                        <h2>Master Degree in Operations & Research</h2>
+                        <span class="position">Jaypee Institute of Information & Technology</span>
+                        <p class="mt-4">Grade: First class distinction.</p>
+                    </div>
+                </div>
+
+                <!-- Education Section 2 -->
+                <div class="grid-item">
+                    <div class="resume-wrap ftco-animate">
+                        <span class="date">2007-2011</span>
+                        <h2>B-Tech (IT)</h2>
+                        <span class="position">Uttar Pradesh Technical University</span>
+                        <p class="mt-4">Grade: First class distinction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons Below Resume -->
+            <!--<div class="buttons text-center mt-2" style="margin-top: 10px;">-->
+            <!-- Reduced margin to bring buttons closer to image -->
+            <!--<button type="button" class="btn-3d" onclick="window.open('https://www.linkedin.com/in/shubham1605/', '_blank');">LinkedIn</button>
+                        <button type="button" class="btn-3d" onclick="downloadCV();">Download CV</button>
+                        <br>
+                        <button type="button" class="btn-3d" onclick="openVideoPopup();">Play Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br />-->
+            <!-- Add CSS for Grid -->
+            <style>
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+                    gap: 20px;
+                }
+
+                .grid-item {
+                    padding: 5px;
+                }
+
+                .buttons .btn-3d {
+                    margin: 5px;
+                }
+            </style>
+
+
+
+
+
+
+            <!--test ends -->
+            <!--
+    ======================================
+    PROJECT SECTION
+    ======================================-->
+        <!--======================================
+            PROJECT SECTION
+            ======================================-->
+            <!--grid problem solution -->
+
+            <section class="ftco-section" id="project-section">
+                <div class="container">
+                    <!-- Row for section heading and intro text -->
+                    <div class="row justify-content-center mb-5 pb-5">
+                        <div class="col-md-7 heading-section text-center ftco-animate">
+                            <h1 class="big big-2">Projects</h1>
+                            <h2 class="mb-4">Projects</h2>
+                            <p>Explore my Data Analytics projects built using Power BI, SQL, Python, and Excel.</p>
+                        </div>
+                    </div>
+
+                    <!-- ROWS FOR DISPLAYING INDIVIDUAL PROJECTS -->
+                    <div class="row">
+                        <!-- Project 1 Card -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end project-box zoom-effect" onclick="openModal('project-modal-1')">
+                                <div class="project-icons">
+                                    <img src="images/SQL_LOGO.png" alt="SQL Icon">
+                                </div>
+                                <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading">
+                                        <a href="#">Olympic Games: Historical Analysis & Performance Insights</a>
+                                    </h3>
+                                    </h3>
+                                    <p class="small-text">
+                                        This project uses SQL to analyze Olympic Games data, focusing on athlete participation, performance trends, and medal outcomes. It identifies patterns across sports and eras, ensuring data accuracy and offering insights into sports evolution and athlete performance.
+                                    </p>
+                                    <div class="button-container mt-3">
+                                        <button class="btn btn-primary see-work" onclick="openModal('project-modal-1')">See My Work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 Card -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end project-box zoom-effect" onclick="openModal('project-modal-2')">
+                                <div class="project-icons">
+                                    <img src="images/POWER_BI_LOGO.png" alt="Power BI Icon">
+                                </div>
+                                <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading">
+                                        <a href="#">Analyzing Credit Card Usage: Identifying Spending Patterns </a>
+                                    </h3>
+                                    <p class="small-text">
+                                        This project leverages Power BI and SQL to analyze credit card usage trends, focusing on transaction volumes, revenue growth, customer engagement, and spending patterns, ensuring actionable insights through data cleaning and integration.
+                                    </p>
+                                    <div class="button-container mt-3">
+                                        <button class="btn btn-primary see-work" onclick="openModal('project-modal-2')">See My Work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 Card -->
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end project-box zoom-effect" onclick="openModal('churn-modal')">
+                                <div class="project-icons">
+                                    <img src="images/POWER_BI_LOGO.png" alt="Power BI Icon">
+                                </div>
+                                <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></a>
+                                <div class="text mt-3 float-right d-block">
+                                    <h3 class="heading">
+                                        <a href="#">Customer Loyalty: Predicting and Addressing Churn Risks</a>
+                                    </h3>
+                                    <p class="small-text">
+                                        This project analyzes customer churn using data analytics and machine learning to identify patterns and predict potential churners. It includes an ETL process and Power BI dashboard to provide actionable insights for improving customer retention.
+                                    </p>
+                                    <br />
+                                    <div class="button-container mt-3">
+                                        <button class="btn btn-primary see-work" onclick="openModal('churn-modal')">See My Work</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <!-- Modal for Project 1 -->
+                        <div id="project-modal-1" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-20 fw-700 text-white">Olympic Games: Historical Analysis and Performance Insights</h1>
+                                    <span class="close" onclick="closeModal('project-modal-1')">&times;</span>
+                                </div>
+
+                                <div class="modal-section">
+                                    <div class="left-column">
+                                        <div class="bg-soft-primary px-16 py-8 rounded-2 fs-18 font-manrope">SQL Project</div>
+                                        <h2 class="bold text-white">Project Overview</h2>
+                                        <p class="text-light">Analyze historical Olympic data to identify key trends and patterns in athlete performance, medal distribution, and country rankings. The project aims to provide actionable insights that can inform strategic decisions for future Olympic Games, enhancing the understanding of athletic achievements and global competition dynamics.</p>
+                                    </div>
+                                    <div class="right-column">
+                                        <div class="image-slider">
+                                            <img id="slide-img-1" src="images/p1/proj_1_2.jpg" alt="Project Image">
+                                            <button class="prev" onclick="prevImage1()">&#10094;</button>
+                                            <button class="next" onclick="nextImage1()">&#10095;</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="button-group">
+                                    <button class="btn" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7244305880291123200/')">View Project on LinkedIn</button>
+                                    <button class="btn" onclick="window.open('https://lnkd.in/gwdxSGVq')">View Project on GitHub</button>
+                                </div>
+
+                              
+                                <div class="modal-section">
+                                    <div class="left-column">
+                                        <h3 class="bold text-white">Project Description</h3>
+                                        <p class="text-light">
+                                            The project focuses on:
+                                        </p>
+                                        <ul class="text-light">
+                                            <li>Analyzing historical Olympic data to uncover trends and patterns.</li>
+                                            <li>Exploring athlete achievements, medal distribution, and country rankings.</li>
+                                            <li>Identifying dominant countries, successful athletes, and the evolution of sports events.</li>
+                                            <li>Providing actionable insights to enhance performance and optimize resource allocation.</li>
+                                            <li>Leveraging advanced data analytics and visualization techniques for impactful insights.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="right-column">
+                                        <h3 class="bold text-white">Project Video</h3>
+                                        <iframe width="450" height="315" src="https://www.youtube.com/embed/abXC1eHbCgo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-section">
+                                    <p class="text-light"><strong><u>Key Focus Areas:</u></strong></p>
+                                    <ul class="text-light">
+                                        <li>Analysis of medal distribution and trends across countries and Olympic editions.</li>
+                                        <li>Tracking athlete performance and identifying records and consistency over multiple Olympics.</li>
+                                        <li>Examination of country rankings and trends in Olympic success over time.</li>
+                                        <li>Investigation of the evolution of events, including the introduction of new sports and their impact on medal distribution.</li>
+                                        <li>Analysis of participation trends, including shifts in athlete and country participation.</li>
+                                        <li>Use of historical data to predict future performance trends and outcomes for upcoming Olympic Games.</li>
+                                        <li>Providing historical context and insights into significant moments and milestones in Olympic history.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="modal-section">
+                                    <p class="text-light"><strong><u>Skills & Expertise Developed:</u></strong></p>
+                                    <ul class="text-light">
+                                        <li>Proficiency in data collection, cleaning, and preprocessing for large-scale datasets.</li>
+                                        <li>Expertise in statistical analysis and trend identification across multidimensional data.</li>
+                                        <li>Advanced skills in data visualization to present insights in a clear and impactful manner.</li>
+                                        <li>Experience in working with historical and time-series data for predictive analysis.</li>
+                                        <li>In-depth understanding of sports analytics and performance evaluation metrics.</li>
+                                        <li>Ability to derive actionable insights for strategic planning and decision-making.</li>
+                                        <li>Enhanced skills in storytelling through data, creating compelling narratives backed by analytics.</li>
+                                    </ul>
+                                </div>
+
+
+                                <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2); margin: 20px 0;">
+                            </div>
+                        </div>
+
+                        <!-- Modal for Project 2 -->
+                        <div id="project-modal-2" class="modal">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-20 fw-700 text-white">Analyzing Credit Card Usage: Identifying Spending Patterns</h1>
+                                    <span class="close" onclick="closeModal('project-modal-2')">&times;</span>
+                                </div>
+
+                                <div class="modal-section">
+                                    <div class="left-column">
+                                        <div class="bg-soft-primary px-16 py-8 rounded-2 fs-18 font-manrope">PowerBI Project</div>
+                                        <h2 class="bold text-white">Project Overview</h2>
+                                        <!--                                        <p class="text-light">
+                This project aims to develop a comprehensive credit card weekly dashboard that provides real-time insights into key performance metrics and trends, enabling stakeholders to monitor and analyze credit card operations effectively.
+            </p>-->
+
+                                        <p class="text-light">
+                                            This project delivers a dynamic credit card dashboard, providing actionable insights into spending patterns, revenue streams, and key trends to support informed decision-making and performance monitoring.
+                                        </p>
+                                    </div>
+
+                                    <div class="right-column">
+                                        <!--<h3 class="bold text-white">Image Gallery</h3>-->
+                                        <div class="image-slider">
+                                            <img id="slide-img-2" src="images/p2/proj_2_2.jpg" alt="Project Image">
+                                            <button class="prev" onclick="prevImage2()">&#10094;</button>
+                                            <button class="next" onclick="nextImage2()">&#10095;</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-section">
+                                    <div class="button-group">
+                                        <button class="btn btn-light" onclick="window.open('https://www.linkedin.com/in/your-linkedin/')">View Project on LinkedIn</button>
+                                        <button class="btn btn-light" onclick="window.open('https://github.com/your-github-link')">View Project on GitHub</button>
+                                    </div>
+                                </div>
+
+                                <div class="modal-section">
+                                    <div class="left-column">
+                                        <h3 class="bold text-white">Project Description</h3>
+                                        <p class="text-light" style="font-size: 12px;">
+                                            The project delivers actionable insights through an interactive dashboard, focusing on:
+                                        </p>
+                                        <ul class="text-light" style="font-size: 12px;">
+                                            <li>Analyzed revenue trends, including a 28.8% surge in Week 53 due to improved engagement.</li>
+                                            <li>Monitored transaction volumes, frequencies, and customer activity to identify high-value segments.</li>
+                                            <li>Examined transaction categories and customer behavior for operational insights.</li>
+                                            <li>Evaluated interest rates, loyalty programs, and marketing strategy outcomes.</li>
+                                            <li>Delivered real-time insights to support data-driven decisions and optimize operations.</li>
+                                        </ul>
+                                        <p class="text-light" style="font-size: 12px;">
+                                            This project highlights the bank's commitment to using data analytics to enhance customer satisfaction and financial performance.
+                                            <br />
+                                            This project underscores the bank's commitment to leveraging data analytics for enhancing customer satisfaction and financial performance.
+                                        </p>
+                                    </div>
+                                    <div class="right-column">
+                                        <h3 class="bold text-white">Project Video</h3>
+                                        <br />
+                                        <iframe width="450" height="315" src="https://www.youtube.com/embed/your_project_video_link" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- Section 5: Insights -->
+                                <div class="modal-section">
+                                    <div class="col-md-8 text-center">
+                                        <h3 class="section-heading">Week 53 Insights: Key Highlights</h3>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10 mx-auto">
+                                        <ul class="insights-list">
+                                            <li><strong>Revenue Growth:</strong> Achieved a significant <strong>28.8% increase in revenue</strong>.</li>
+                                            <li><strong>Increased Activity:</strong> Notable rises in <strong>total transaction amount</strong>, <strong>transaction count</strong>, and <strong>customer count</strong>.</li>
+                                            <li>
+                                                <strong>Comprehensive Metrics Analysis:</strong>
+                                                <ul>
+                                                    <li><strong>Credit Utilization:</strong> Trends and patterns.</li>
+                                                    <li><strong>Transaction Behavior:</strong> Insights into spending habits.</li>
+                                                    <li><strong>Customer Satisfaction:</strong> Key indicators and trends.</li>
+                                                    <li><strong>Demographic Trends:</strong> Impact of customer profiles.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Actionable Recommendations:</strong>
+                                                <ul>
+                                                    <li>Leverage strengths to maintain growth momentum.</li>
+                                                    <li>Address weaknesses identified in credit card operations.</li>
+                                                    <li>Maximize opportunities to enhance customer engagement and revenue.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <p class="text-center mt-4">
+                                            <a href="link-to-report.html" class="btn btn-primary">Explore the Entire Report</a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Section 6: Live Interactive Dashboard Title -->
+                                <div class="modal-section">
+                                    <h2 class="bold text-white">Live Interactive Dashboard</h2>
+                                </div>
+
+                                <!-- Section 7: Interactive Dashboard -->
+                                <div class="modal-section">
+                                    <iframe src="https://bit.ly/project_credit" width="100%" height="600px" style="border:none;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Modal 3: Customer Churn -->
+                        <div id="churn-modal" class="modal">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-20 fw-700 text-white">Customer Churn Analysis</h1>
+                                    <span class="close" onclick="closeModal('churn-modal')">&times;</span>
+                                </div>
+
+                                <!-- Modal Body -->
+                                <div class="modal-body">
+                                    <div class="modal-section">
+                                        <div class="left-column">
+                                            <div class="bg-soft-primary px-16 py-8 rounded-2 fs-18 font-manrope">PowerBI Project</div>
+                                            <h2 class="bold text-white">Project Overview</h2>
+                                            <p class="text-light">
+                                                In today’s competitive market, understanding why customers leave is key to sustained success. This project leverages advanced analytics and machine learning to analyze customer data—spanning demographics, geography, payments, and services—to uncover patterns of churn. By identifying at-risk customers and the factors driving their decisions, we deliver actionable insights that empower businesses to boost retention and strengthen loyalty.
+                                            </p>
+                                        </div>
+                                        <div class="right-column">
+                                            <br />
+                                            <br />
+                                            <!--<h3 class="bold text-white">Image Gallery</h3>-->
+                                            <div class="image-slider">
+                                                <img id="slide-img-3" src="images/p3/proj_3_1.jpg" alt="Project Image">
+                                                <button class="prev" onclick="prevImage('slide-img-3')">&#10094;</button>
+                                                <button class="next" onclick="nextImage('slide-img-3')">&#10095;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal-section">
+                                        <h3 class="bold text-white">Project Goals</h3>
+                                        <ul class="text-light">
+                                            <li>
+                                                <strong>Data Visualization & Analysis:</strong>
+                                                <p>Explore customer data across demographics, geography, payment/account details, and services.</p>
+                                            </li>
+                                            <li>
+                                                <strong>Churner Profile Identification:</strong>
+                                                <p>Analyze churner characteristics to target marketing campaigns effectively.</p>
+                                            </li>
+                                            <li>
+                                                <strong>Churn Prediction:</strong>
+                                                <p>Develop a predictive model to identify customers at risk of leaving.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <!-- Insights Section -->
+                                    <div class="modal-section">
+                                        <h3 class="bold text-white"> Key Insights</h3>
+                                    </div>
+                                    <div class="modal-section">
+                                        <!--<h3 class="bold text-white"> Key Insights</h3>-->
+                                        <ul class="text-light">
+                                            <li><strong>Churn Rate:</strong> Identified a <strong>12% monthly churn rate</strong>.</li>
+                                            <li><strong>Behavioral Trends:</strong> Frequent churn among customers with high service costs.</li>
+                                            <li>
+                                                <strong>Demographic Impact:</strong>
+                                                <ul>
+                                                    <li><strong>Age Groups:</strong> Younger customers show higher churn rates.</li>
+                                                    <li><strong>Geography:</strong> Urban customers churn less than rural customers.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <strong>Actionable Recommendations:</strong>
+                                                <ul>
+                                                    <li>Offer loyalty rewards to reduce churn.</li>
+                                                    <li>Analyze pricing models to retain cost-sensitive customers.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+
+
+                                    <div class="modal-section">
+                                        <a href="link-to-report.html" class="btn btn-primary">Explore the Entire Report</a>
+                                    </div>
+
+                                    <!-- Dashboard Section -->
+                                    <!-- Section 6: Live Interactive Dashboard Title -->
+                                    <div class="modal-section">
+                                        <h2 class="bold text-white">Live Interactive Dashboard</h2>
+                                    </div>
+
+                                    <!-- Section 7: Interactive Dashboard -->
+                                    <div class="modal-section">
+                                        <iframe src="https://bit.ly/project_credit" width="100%" height="600px" style="border:none;"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+            </section>
+
+
+
+            <!-- JavaScript for handling the modal and image slider -->
+            <script>
+                // Open modal
+                function openModal(modalId) {
+                    document.getElementById(modalId).style.display = 'block';
+                }
+
+                // Close modal
+                function closeModal(modalId) {
+                    document.getElementById(modalId).style.display = 'none';
+                }
+
+                // Image slider for Project 1
+                var currentSlide1 = 0;
+                var images1 = [
+                    'images/p1/proj_1_2.jpg',
+                    'images/p1/proj_1_3.jpg',
+                    'images/p1/proj_1_4.jpg',
+                    'images/p1/proj_1_5.jpg',
+                    'images/p1/proj_1_6.jpg',
+                    'images/p1/proj_1_7.jpg',
+                    'images/p1/proj_1_8.jpg',
+                    'images/p1/proj_1_9.jpg',
+                    'images/p1/proj_1_10.jpg'
+                ];
+
+                function nextImage1() {
+                    currentSlide1 = (currentSlide1 + 1) % images1.length;
+                    document.getElementById('slide-img-1').src = images1[currentSlide1];
+                }
+
+                function prevImage1() {
+                    currentSlide1 = (currentSlide1 - 1 + images1.length) % images1.length;
+                    document.getElementById('slide-img-1').src = images1[currentSlide1];
+                }
+
+                // Image slider for Project 2
+                var currentSlide2 = 0;
+                var images2 = [
+                    'images/p2/proj_2_2.jpg',
+                    'images/p2/proj_2_3.jpg',
+                    'images/p2/proj_2_4.jpg',
+                    'images/p2/proj_2_5.jpg',
+                    'images/p2/proj_2_6.jpg',
+                    'images/p2/proj_2_7.jpg',
+                    'images/p2/proj_2_8.jpg',
+                    'images/p2/proj_2_9.jpg',
+                    'images/p2/proj_2_10.jpg',
+                    'images/p2/proj_2_11.jpg'
+                ];
+
+                function nextImage2() {
+                    currentSlide2 = (currentSlide2 + 1) % images2.length;
+                    document.getElementById('slide-img-2').src = images2[currentSlide2];
+                }
+
+                function prevImage2() {
+                    currentSlide2 = (currentSlide2 - 1 + images2.length) % images2.length;
+                    document.getElementById('slide-img-2').src = images2[currentSlide2];
+                }
+
+                // Close modal if user clicks outside of it
+                window.onclick = function (event) {
+                    const modals = document.getElementsByClassName('modal');
+                    for (let i = 0; i < modals.length; i++) {
+                        if (event.target == modals[i]) {
+                            closeModal(modals[i].id);
+                        }
+                    }
+                }
+            </script>
+
+
+            <script>
+                const sliders = {
+                    "slide-img-3": {
+                        images: [
+                            'images/p3/proj_3_1.jpg',
+                            'images/p3/proj_3_2.jpg',
+                            'images/p3/proj_3_3.jpg',
+                            'images/p3/proj_3_4.jpg',
+                            'images/p3/proj_3_5.jpg',
+                            'images/p3/proj_3_6.jpg',
+                            'images/p3/proj_3_7.jpg',
+                            'images/p3/proj_3_8.jpg',
+                            'images/p3/proj_3_9.jpg',
+                            'images/p3/proj_3_10.jpg'
+                        ],
+                        currentIndex: 0
+                    }
+                };
+
+                // Open modal
+                function openModal(modalId) {
+                    const modal = document.getElementById(modalId);
+                    if (modal) modal.style.display = 'block';
+                }
+
+                // Close modal
+                function closeModal(modalId) {
+                    const modal = document.getElementById(modalId);
+                    if (modal) modal.style.display = 'none';
+                }
+
+                // Next image
+                function nextImage(slideId) {
+                    const slider = sliders[slideId];
+                    if (slider) {
+                        slider.currentIndex = (slider.currentIndex + 1) % slider.images.length;
+                        document.getElementById(slideId).src = slider.images[slider.currentIndex];
+                    }
+                }
+
+                // Previous image
+                function prevImage(slideId) {
+                    const slider = sliders[slideId];
+                    if (slider) {
+                        slider.currentIndex = (slider.currentIndex - 1 + slider.images.length) % slider.images.length;
+                        document.getElementById(slideId).src = slider.images[slider.currentIndex];
+                    }
+                }
+
+                // Close modal if clicked outside
+                window.onclick = function (event) {
+                    const modals = document.querySelectorAll('.modal');
+                    modals.forEach(modal => {
+                        if (event.target === modal) {
+                            closeModal(modal.id);
+                        }
+                    });
+                };
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--======================================
+        ACHIEVEMENT SECTION
+    ======================================-->
+
+
+            <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+                <div class="container">
+                    <div class="row d-md-flex align-items-center">
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="20">0</strong>
+                                    <span>Achievements</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="30">0</strong>
+                                    <span>Projects</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="1000">0</strong>
+                                    <span>Mentored Students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18">
+                                <div class="text">
+                                    <strong class="number" data-number="500">0</strong>
+                                    <span>Cups of coffee</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--======================================
+            GITHUB SECTION
+        ======================================-->
+
+
+                <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+                    <!-- <div class="container"> -->
+                    <div class="row justify-content-center">
+                        <div class="col-md-7 ftco-animate text-center">
+                            <h2>More projects on<span> Github  </span> </h2>
+                            <div class="heading">
+                                <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+                                <br>
+                                <p><a href="https://github.com/Shubham-Saxena-16/" class="btn btn-primary py-3 px-5">GitHub</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+
+            <!--======================================
+        CONTACT SECTION
+    ======================================-->
+
+            <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+                <div class="container">
+                    <!-- Section Header -->
+                    <div class="row justify-content-center mb-5 pb-3">
+                        <div class="col-md-7 heading-section text-center ftco-animate">
+                            <h1 class="big big-2">Contact</h1>
+                            <h2 class="mb-4">Contact Me</h2>
+                            <p>Below are the details to reach out to me!</p>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details Section -->
+                    <div class="row d-flex contact-info mb-5">
+                        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                            <div class="align-self-stretch box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-map-signs"></span>
+                                </div>
+                                <h3 class="mb-4">Address</h3>
+                                <p>Hyderabad, India</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                            <div class="align-self-stretch box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-phone2"></span>
+                                </div>
+                                <h3 class="mb-4">Contact Number</h3>
+                                <p><a href="tel:+919005948555">+91 9005948555</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                            <div class="align-self-stretch box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-paper-plane"></span>
+                                </div>
+                                <h3 class="mb-4">Email Address</h3>
+                                <p><a href="mailto:shubham786.saxena@gmail.com">shubham786.saxena@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                            <div class="align-self-stretch box p-4 text-center">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span class="icon-globe"></span>
+                                </div>
+                                <h3 class="mb-4">Download Resume</h3>
+                                <p><a href="resumelink" target="_blank">Download Here</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Have a Question & Google Form Button -->
+                    <div class="container mt-5">
+                        <br>
+                        <br>
+                        <div class="row justify-content-center">
+                            <div class="col-md-7 ftco-animate text-center">
+                                <h2>
+                                    Have a <span>Question?</span>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeEQCQJd6y22nkvhUMRSHNjwgAeAn-Pn8kZz-cV0QX0gXvkaA/viewform?usp=sf_link" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a>
+                                </h2>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--======================================
+        Dont Change Footer SECTION
+    ======================================-->
+
+
+            <footer class="ftco-footer ftco-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <!-- loader -->
+            <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.easing.1.3.js"></script>
+            <script src="js/jquery.waypoints.min.js"></script>
+            <script src="js/jquery.stellar.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="js/aos.js"></script>
+            <script src="js/jquery.animateNumber.min.js"></script>
+            <script src="js/scrollax.min.js"></script>
+
+            <script src="js/main.js"></script>
+
+</body>
+</html>
